@@ -23,7 +23,7 @@ main url = http://localhost:8000/api/
         sale => میزان فروش
         colors => تعداد رنگ بندی
     }
-
+ 
 4. Add new Product
     method => Post
     req body => {
@@ -39,6 +39,7 @@ main url = http://localhost:8000/api/
 ///////////////////// Finish Products Routes (sub_url => products/) //////////////////////
 
 
+main url = http://localhost:8000/api/
 
 ///////////////////// Start comments Routes (sub_url => comments/) //////////////////////
 
@@ -57,9 +58,21 @@ main url = http://localhost:8000/api/
         body => محتوای جدید کامنت
     }
 
+4. Accept Comment 
+    method => POST
+    sub-url : /reject
+    req param => commentId => Comment ID
+
+5. Reject Comment 
+    method => POST
+    sub-url : /reject
+    req param => commentId => Comment ID    
+
+
 ///////////////////// Finish comments Routes (sub_url => comments/) //////////////////////
 
 
+main url = http://localhost:8000/api/
 
 ///////////////////// Start Users Routes (sub_url => users/) //////////////////////
 
@@ -90,6 +103,7 @@ main url = http://localhost:8000/api/
 ///////////////////// Finish Users Routes (sub_url => users/) //////////////////////
 
 
+main url = http://localhost:8000/api/
 
 ///////////////////// Start Orders Routes (sub_url => orders/) //////////////////////
 
@@ -110,6 +124,7 @@ main url = http://localhost:8000/api/
 ///////////////////// Finish Orders Routes (sub_url => orders/) //////////////////////
 
 
+main url = http://localhost:8000/api/
 
 ///////////////////// Start Offs Routes (sub_url => offs/) //////////////////////
 
@@ -130,6 +145,7 @@ main url = http://localhost:8000/api/
 ///////////////////// Finish Offs Routes (sub_url => offs/) //////////////////////
 
 
+main url = http://localhost:8000/api/
 
 ///////////////////// Start Admins Routes (sub_url => admins/) //////////////////////
 
